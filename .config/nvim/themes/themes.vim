@@ -7,4 +7,3 @@ colorscheme material
 
 " For transparent terminal
 " highligh Normal guibg=none
-

@@ -1,10 +1,10 @@
 " Enable tabline
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemode=":t"
-let g:airline#extensions#tabline#left_sep=' '
-let g:airline#extensions#tabline#left_alt_sep=' '
-let g:airline#extensions#tabline#right_sep=' '
-let g:airline#extensions#tabline#right_alt_sep=' '
+let g:airline#extensions#tabline#left_sep="\uE0B8"
+let g:airline#extensions#tabline#left_alt_sep="\uE0B8"
+let g:airline#extensions#tabline#right_sep="\uE0EA"
+let g:airline#extensions#tabline#right_alt_sep="\uE0BA"
 
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep="\uE0B0"
