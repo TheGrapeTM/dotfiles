@@ -1,0 +1,12 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": ["python"],
+      "python.venvFolders": [".pyenv"],
+      "python.venvPath" : "~/.pyenv",
+      "python.linting.enabled": true,
+      "python.linting.pylintEnabled": true,
+      "python.jediEnabled": false,
+      "python.formatting.provider": "black",
+      "python.formatting.blackPath": "~/.pyenv/versions/3.9.4/bin/black",
+      "python.sortImports.path": "~/.pyenv/versions/3.9.4/bin/isort",
+      "python.linting.lintOnSave": true
+}
