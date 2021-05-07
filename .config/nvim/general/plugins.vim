@@ -16,10 +16,13 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Auto completion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'davidhalter/jedi-vim'
-" Plug 'neovim/nvim-lspconfig'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'simrat39/symbols-outline.nvim'
 Plug 'honza/vim-snippets'
 
 " Status bar
@@ -28,5 +31,8 @@ Plug 'vim-airline/vim-airline-themes'
 
 " Comment plugin
 Plug 'scrooloose/nerdcommenter'
+
+" prettier
+Plug 'sbdchd/neoformat'
 
 call plug#end()
