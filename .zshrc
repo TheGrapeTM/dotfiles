@@ -115,6 +115,7 @@ alias vim="nvim"
 # alias pip="/usr/bin/pip3"
 alias vimrc="nvim ~/.config/nvim/init.vim"
 alias dot="/usr/bin/git --git-dir=/Users/xavier/dotfiles --work-tree=/Users/xavier"
+alias ls="lsd"
 
 #Shotcuts
 j() {
@@ -128,6 +129,6 @@ j() {
 neofetch
 
 # PyEnv Configuration
-export PATH="~/.pyenv/bin:$PATH"
+# export PATH="~/.pyenv/bin:$PATH" (for linux)
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
