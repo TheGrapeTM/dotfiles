@@ -19,6 +19,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'davidhalter/jedi-vim'
+" Plug 'neovim/nvim-lspconfig'
+Plug 'honza/vim-snippets'
 
 " Status bar
 Plug 'vim-airline/vim-airline'
