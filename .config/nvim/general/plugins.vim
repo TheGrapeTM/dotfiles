@@ -24,6 +24,9 @@ Plug 'hrsh7th/nvim-compe'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'simrat39/symbols-outline.nvim'
 Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
 
 " Status bar
 Plug 'vim-airline/vim-airline'

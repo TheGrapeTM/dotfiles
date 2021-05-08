@@ -3,13 +3,34 @@ local function on_attach()
     -- "Big Tech" "Cash Money" Johnson
 end
 
-require'lspconfig'.tsserver.setup{ on_attach=on_attach }
-require'lspconfig'.clangd.setup {
-    on_attach = on_attach,
-    root_dir = function() return vim.loop.cwd() end
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities.textDocument.completion.completionItem.resolveSupport = {
+  properties = {
+    'documentation',
+    'detail',
+    'additionalTextEdits',
+  }
 }
 
-require'lspconfig'.pyls.setup{ on_attach=on_attach }
+require'lspconfig'.tsserver.setup{
+    on_attach=on_attach,
+    capabilities = capabilities,
+}
+require'lspconfig'.clangd.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    root_dir = function() return vim.loop.cwd() end,
+}
+
+require'lspconfig'.pyls.setup{
+    on_attach=on_attach,
+    capabilities = capabilities,
+}
+require'lspconfig'.html.setup{
+    on_attach=on_attach,
+    capabilities = capabilities,
+}
 
 local opts = {
     -- whether to highlight the currently hovered symbol
