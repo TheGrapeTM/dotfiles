@@ -38,4 +38,7 @@ Plug 'scrooloose/nerdcommenter'
 " prettier
 Plug 'sbdchd/neoformat'
 
+" floating terminal
+Plug 'voldikss/vim-floaterm'
+
 call plug#end()

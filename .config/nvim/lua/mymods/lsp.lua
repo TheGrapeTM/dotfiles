@@ -23,7 +23,7 @@ require'lspconfig'.clangd.setup {
     root_dir = function() return vim.loop.cwd() end,
 }
 
-require'lspconfig'.pyls.setup{
+require'lspconfig'.jedi_language_server.setup{
     on_attach=on_attach,
     capabilities = capabilities,
 }
