@@ -115,6 +115,8 @@ alias vim="nvim"
 alias vimrc="nvim ~/.config/nvim/init.vim"
 alias dot="/usr/bin/git --git-dir=/Users/xavier/dotfiles --work-tree=/Users/xavier"
 alias ls="lsd"
+alias ca="conda activate base"
+alias jupy="jupyter notebook"
 
 #Shotcuts
 j() {
